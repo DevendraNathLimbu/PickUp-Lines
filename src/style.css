@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Arial', sans-serif;
-    background-color: #e07777;
+    background-color: wheat;
     color: #333;
     height: 100vh;
     display: flex;
@@ -64,14 +64,14 @@ main button{
     font-size: 1.8pc;
     padding: 10px 20px;
     border-radius: 10px;
-    background: rgb(20, 216, 20);
+    background: rgb(10, 150, 10);
     color: #fff;
     border: none;
     cursor: pointer;
     outline: none;
 }
 main .btn button:hover{
-    background: rgb(10, 150, 10);
+    background: rgb(6, 103, 6);
 }
 main .container span span{
     font-size: 1pc;
