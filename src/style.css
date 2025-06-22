@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e07777;
     color: #333;
     height: 100vh;
     display: flex;
@@ -13,9 +13,8 @@ body{
     justify-content: center;
 }
 main{
-    height: 500px;
+    height: 400px;
     width: 750px;
-    border: 1px dashed red;
     border-radius: 10px;
     background: linear-gradient(to right, #000428,#004e92);
 }
@@ -25,17 +24,41 @@ main h1{
     color: #fff;
     padding: 20px 0;
 }
-main div{
-   min-height: 150px;
+main .container{
+    position: relative;
+   min-height: 100px;
     width: 100%;
-    border: 2px dashed #fff;
-    margin-top: 60px;
+    margin-top: 30px;
+    padding: 20px;
 }
-main div p{
+main .container p{
     font-size: 1.2pc;
-    color: #fff;
+    color: #111;
     text-align: center;
     padding: 20px;
+    height: 80px;
+    margin: 0 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+main .container span{
+    position: absolute;
+    right: 85px;
+    top: 20px;
+    font-size: 1.5pc;
+    font-weight: 500;
+    color: #000000;
+    z-index: 1;
+    cursor: pointer;
+}
+
+main .btn{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 main button{
     font-size: 1.8pc;
@@ -43,4 +66,70 @@ main button{
     border-radius: 10px;
     background: rgb(20, 216, 20);
     color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+main .btn button:hover{
+    background: rgb(10, 150, 10);
+}
+main .container span span{
+    font-size: 1pc;
+    color: #bebbbb;
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+@media screen and (max-width: 768px){
+    main{
+        width: 90%;
+        height: auto;
+    }
+    main h1{
+        font-size: 2pc;
+    }
+    main .container p{
+        margin: 0 20px;
+        height: auto;
+    }
+    main .container span{
+        right: 20px;
+    }
+    main .btn button{
+        font-size: 1.5pc;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    body{
+        height: 93vh;
+    }
+    main{
+        height: 300px;
+    }
+    main h1{
+        font-size: 1.8pc;
+    }
+    main .container{
+        min-height: 50px;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    main .container p{
+        min-height: 80px;
+        font-size: 1.1pc;
+        margin: 0 10px;
+    }
+    main .container span{
+        top: 10px;
+        right: 22px;
+        font-size: 1.5pc;
+    }
+    main .btn{
+        margin-top: 20px;
+    }
+    main .btn button{
+        font-size: 1.5pc;
+        font-weight: bold;
+    }
 }
