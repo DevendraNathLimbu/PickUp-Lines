@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    height: 500px;
+    width: 750px;
+    border: 1px dashed red;
+    border-radius: 10px;
+    background: linear-gradient(to right, #000428,#004e92);
+}
+main h1{
+    font-size: 2.5pc;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+main div{
+   min-height: 150px;
+    width: 100%;
+    border: 2px dashed #fff;
+    margin-top: 60px;
+}
+main div p{
+    font-size: 1.2pc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+main button{
+    font-size: 1.8pc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgb(20, 216, 20);
+    color: #fff;
+}
