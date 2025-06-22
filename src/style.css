@@ -105,7 +105,8 @@ main .container span span{
         height: 93vh;
     }
     main{
-        height: 300px;
+        min-height: 300px;
+        padding-bottom: 10px;
     }
     main h1{
         font-size: 1.8pc;
