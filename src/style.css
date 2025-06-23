@@ -75,7 +75,7 @@ main .btn button:hover{
 }
 main .container span span{
     font-size: 1pc;
-    color: #bebbbb;
+    color: hwb(0 100% 0%);
     position: absolute;
     right: 0;
     top: -20px;
